@@ -1,0 +1,14 @@
+安卓：
+1.getGGType打渠道包之后，网络错误获取不到返回值：安卓targetAPI的版本太高，降低版本即可
+2.打渠道包后，确认已调用拉取广告方法，但无广告，查看apk是否分包了，如果分包，在build.gradle中debug属性中加入multiDexEnabled = false，避免分包即可
+
+小游戏平台：
+1.头条平台，本地存储boolean类型的时，不会转换为字符串，读取时还是boolean类型
+2.vivo平台，使用cc.audioEngine.playMusic()接口时，在游戏切后台，返回游戏时，会自动播放背景音乐。只能用cc.audioEngine.play()接口
+4.vivo平台从后台切回前台时，音效资源没有释放，会再播一次音效
+3.vivo平台声音适配有问题，播放激励广告时，游戏没有自动切换后台，需要监听前后台事件，并设置背景音乐和音效的音量大小
+4.4399 fitwidth 和 fitheight 同时勾选，index的body中加入4399脚本代码
+<script src="http://h.api.4399.com/h5mini-2.0/h5api-interface.php"></script>
+title去掉，boderRadius改为0，cocos2d-js-min中的外链去掉：t.openURL=function(t){window.open(t)},
+
+
