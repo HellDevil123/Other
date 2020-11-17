@@ -1,0 +1,4 @@
+oppo ： devtools://devtools/bundled/inspector.html?v8only=true&ws=192.168.0.45:12345/00010002-0003-4004-8005-000600070008
+
+vivo ： devtools://devtools/bundled/inspector.html?v8only=true&ws=192.168.0.45:5086/00010002-0003-4004-8005-000600070008
+
